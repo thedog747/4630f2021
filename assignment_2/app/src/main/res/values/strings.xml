@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="title_name">John O\'Neill</string>
+    <string name="image_name">That\'s me, Jack!</string>
+    <string name="image2_name">Noah</string>
+    <string name="button_name">Bruh Sound Effect #2</string>
+
+</resources>
