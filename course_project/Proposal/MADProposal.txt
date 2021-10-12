@@ -1,0 +1,69 @@
+Project title:
+Inception - The event organizer for creatives.
+(Meaning the establishment or starting point of an institution or activity)
+
+What is the problem you aim to tackle with your project?
+Artists, creatives, and designers of all stripes may find that their project requires a modecum of planning or forethought. Most project planning websites and applications on the market today target businesses and developers, which I plan to change with this application.
+
+Why is this problem important to tackle?
+This problem is important to tackle because the current project planning offerings for creatives are simply not designed for them. They are serviceable to a point, but ultimately are not catered toward the creative process.
+
+Who stands to benefit from this app most? (I.e., who is your expected "market")
+As stated before, artists, creatives, and designers.
+This project in particular is oriented mainly towards individuals who mainly work alone.
+
+List other apps that have addressed the same problem (please number them for the next question)
+1 - Trello
+
+2- Google Calendar
+
+3 - ClickUp
+
+For each app you listed above, list in what ways it is lacking (please number them correspondingly)
+1:
+Very goal oriented and tracks progress well, but is not centered around the management of ideas, inspirations, notes, things of that sort.
+
+2:
+A very good, free, straightforward calendar for keeping track of due dates and events, but functionality beyond this is limited.
+
+3:
+Good for organizing ideas and goals, but more oriented towards business and development rather than art or creative projects.
+
+For each shortcoming you have identified above, state whether you intend to address it, and (briefly) how
+1:
+The user should be able to establish an idea heirarchy to manage their thoughts and inspirations. It will look like a file system on any phone or computer but will have two layers, one for personal ideas and another for outside inspirations as stated previously. For example, a folder called "Art" can have your own sketches on the first layer, and with the press of a button it can change to show inspirations for your sketches, whether that pertains to another drawing, another type of file your android can open, or a link.
+
+2:
+Events, due dates, and goals can be viewed either in event view or calendar view. A metrics viewer will allow you to view your current progress and chart your pace working on the project. Goals can also be given flexible due dates and priorities, with notification and metric settings subject to user preferences.
+
+3:
+The app should be able to handle any multimedia file your android can handle. These can be passed on to the android's default programs for handling that file, allowing the user to use their preferred viewers. For example, a video file could be opened in a browser, a program like VLC, or the player that comes with the phone at the user's discretion.
+
+Your "elevator pitch" (should take no more than ~60 seconds to tell)
+As of presently, creatives lack compelling options to plan and develop their projects, as most planning software is geared towards businesses and developers. Inception will be geared towards this inadequately served niche. It will allow for easy goal setting, progress viewing, metric analysis, idea coordination, and inspiration organization. Creative projects will finally have a compelling way to gather thoughts together, set goals, measure progress, and complete tasks in a way that is actually geared towards the creative process.
+
+List any technologies you are considering for your project; compare them to alternative options, and state which one(s) you find more promising and why
+(Tentatively) no plans for proprietary software in my app other than a database like Firebase.
+All other programs will simply be redirected to from my application, e.g. a video file can be passed on to VLC or a hyperlink on to Chrome.
+
+Team
+I intend to complete the project on my own
+
+Additional team members (list all team members' names, or NA if a solo project)
+NA
+
+I am submitting (check all that apply)
+A hand-drawn mock user interface
+
+Link to your project's directory on your site on GitHub (don't forget to include a _whoAmI.txt and a README.txt files so I can make the connection between your real name and your GitHub user ID)
+It should be under the following directory:
+https://github.com/thedog747/4630f2021/tree/main/course_project
+
+One-vs-two semesters (plans)
+One-semester project
+
+Academic honesty certification
+The work I am submitting is my own in its entirety
+
+Powerpoint link:
+https://docs.google.com/presentation/d/1qmtJrFaYypY3TnxCgTfS-tHz9qE7ZH87zKXfyr_PbhE/edit?usp=sharing
