@@ -1,8 +1,47 @@
 <resources>
-    <string name="app_name">MainActivity</string>
-    <string name="title_name">John O\'Neill</string>
+    <string name="app_name">App 3</string>
+    <string name="app_title">Me and the world around me.</string>
+    <string name="my_name">John O\'Neill</string>
     <string name="image_name">That\'s me, Jack!</string>
-    <string name="image2_name">Noah</string>
+    <string name="image2_name">Noah Augmented Edition</string>
     <string name="button_name">Bruh Sound Effect #2</string>
+    <string name="button_first">My Name and Face</string>
+    <string name="button_second">The Weather</string>
+    <string name="button_third">Facts</string>
+    <string name="button_fourth">Investment</string>
+    <string name="button_fifth">GitHub/Resume</string>
+    <string name="button_sixth">Bonus Facts</string>
+    <string name="default_l">Location</string>
+    <string name="default_t">Temperature</string>
+    <string name="default_w">Weather</string>
+    <string name="fax_1">I was born in Melrose, Massachusetts.</string>
+    <string name="fax_2">Now I live in Salem, New Hampshire.</string>
+    <string name="fax_3">I\'d like the opportunity to work in Asia, either in Japan or Taiwan.</string>
+    <string name="fax_4">My last partner grew up in Methuen.</string>
+    <string name="Jack">Jack</string>
+    <string name="Anthony">Anthony</string>
+    <string name="Noah">Noah</string>
+    <string name="Jack_i1">AMD</string>
+    <string name="Jack_i2">Noctua</string>
+    <string name="Jack_i3">Timberland</string>
+    <string name="Jack_i4">Husqvarna</string>
+    <string name="Jack_i5">Wendys</string>
+    <string name="Jack_i6">Chili\'s</string>
+    <string name="Jack_i7">Clam Shack</string>
+    <string name="Anthony_i1">Money</string>
+    <string name="Anthony_i2">Cheesecake</string>
+    <string name="Anthony_i3">Cornbread</string>
+    <string name="Anthony_i4">Produce</string>
+    <string name="Anthony_i5">AMC Cinema</string>
+    <string name="Noah_i1">Beyond Meat</string>
+    <string name="Noah_i2">Tannerite Sports</string>
+    <string name="Noah_i3">Bats</string>
+    <string name="Noah_i4">Wasps</string>
+    <string name="Noah_i5">Fire Ants</string>
+    <string name="b_fax_1">I can beat Momodora: RUtM in under 1 hour.</string>
+    <string name="b_fax_2">My favorite colors are Yellow and Grey.</string>
+    <string name="b_fax_3">I like watching foreign media to passively learn languages.</string>
+    <string name="b_fax_4">I have cleared all 108+30 floors of the Abyss in Nioh 2.</string>
+
 
 </resources>

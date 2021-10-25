@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/karst_city"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/button_second"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        tools:text="@string/button_second" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="327dp"
+        android:layout_height="510dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@drawable/back"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/l1_l"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="none|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_l" />
+
+            <TextView
+                android:id="@+id/l1_t"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_t" />
+
+            <TextView
+                android:id="@+id/l1_w"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_w" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@drawable/back"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/l2_l"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_l" />
+
+            <TextView
+                android:id="@+id/l2_t"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_t" />
+
+            <TextView
+                android:id="@+id/l2_w"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_w" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@drawable/back"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/l3_l"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_l" />
+
+            <TextView
+                android:id="@+id/l3_t"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_t" />
+
+            <TextView
+                android:id="@+id/l3_w"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_w" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@drawable/back"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/l4_l"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_l" />
+
+            <TextView
+                android:id="@+id/l4_t"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_t" />
+
+            <TextView
+                android:id="@+id/l4_w"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_w" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@drawable/back"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/l5_l"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_l" />
+
+            <TextView
+                android:id="@+id/l5_t"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_t" />
+
+            <TextView
+                android:id="@+id/l5_w"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:maxLines ="2"
+                android:scrollHorizontally="false"
+                android:gravity="center"
+                android:text="@string/default_w" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
