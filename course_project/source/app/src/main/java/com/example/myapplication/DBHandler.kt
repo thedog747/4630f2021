@@ -44,6 +44,9 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DB_NAME,
         }
 
         val result = db.insert(TABLE_NAME, null, cv)
+
+        db.close()
+
         if(result == (-1).toLong())
             Toast.makeText(context, "Failed to add task!", Toast.LENGTH_SHORT).show()
         else
