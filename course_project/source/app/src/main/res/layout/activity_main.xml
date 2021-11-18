@@ -27,7 +27,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/AddTask"
+                    android:id="@+id/AddTaskButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -186,21 +186,21 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button10"
+                    android:id="@+id/CalendarButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Calendar" />
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/ConceptsButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Concepts" />
 
                 <Button
-                    android:id="@+id/button12"
+                    android:id="@+id/CompletionButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

@@ -12,10 +12,11 @@ class Task {
     var id : Int = 0
     var complexity :  Int = Complexity.NORMAL.difficulty
     var completion : Int = Completion.INCOMPLETE.status
-    var date : Calendar = Calendar.getInstance()
+    var date : String = ""
     var details : String = ""
 
-    constructor(complexity: Int, details: String, completion: Int, date: Calendar){
+    constructor(id: Int, complexity: Int, details: String, completion: Int, date: String){
+        this.id = id
         this.complexity = complexity
         this.completion = completion
         this.details = details

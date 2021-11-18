@@ -16,6 +16,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        AddTask.setOnClickListener{ startActivity(Intent(this, AddTask::class.java)) }
+        AddTaskButton.setOnClickListener{
+            val intent = Intent(this, AddTask::class.java)
+            startActivity(intent)
+        }
+        ConceptsButton.setOnClickListener{
+            val intent = Intent(this, FolderView::class.java)
+            startActivity(intent)
+        }
     }
 }
