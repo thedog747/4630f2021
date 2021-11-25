@@ -8,6 +8,12 @@ import java.text.SimpleDateFormat
 import java.util.*
 import android.content.Intent
 import android.graphics.Color
+import android.widget.CalendarView
+
+import android.widget.CalendarView.OnDateChangeListener
+
+
+
 
 class AddTask : AppCompatActivity() {
 
@@ -15,14 +21,20 @@ class AddTask : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.add_task)
         var difficulty = 0
+        val sdf = SimpleDateFormat("dd/MM/yyyy")
+        var selectedDate = sdf.format(Date(CalendarView.date))
+
+        CalendarView.setOnDateChangeListener(OnDateChangeListener { calendar, year, month, dayOfMonth ->
+            selectedDate = (dayOfMonth.toString() + "/" + month.toString() + "/" + year.toString())
+        })
 
         SubmitTask.setOnClickListener(){
-            val sdf = SimpleDateFormat("dd/MM/yyyy")
-            val theDate: String = sdf.format(Date(CalendarView.getDate()))
+            val theDate: String = selectedDate
             var task = Task((System.currentTimeMillis()).toInt(), difficulty, Description.text.toString(), 0, theDate)
             var db = DataBaseHandler(this)
             db.addTask(task)
         }
+
 
         EasyButton.setOnClickListener(){
             difficulty = 0

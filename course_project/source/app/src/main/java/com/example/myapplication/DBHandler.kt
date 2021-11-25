@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import android.widget.Toast
 import java.security.AccessController.getContext
 import java.util.*
+import kotlin.collections.ArrayList
 
 val DB_NAME = "Inception"
 val TABLE_NAME = "Tasks"
@@ -52,6 +53,43 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DB_NAME,
         else
             Toast.makeText(context, "Success!", Toast.LENGTH_SHORT).show()
         return result
+    }
+
+    fun getTasks() : MutableList<Task>{
+        val db = this.readableDatabase
+        val request = "Select * from " + TABLE_NAME
+        val result = db.rawQuery(request, null)
+        var tasks : MutableList<Task> = ArrayList()
+
+        if(!(result.moveToFirst())){
+            result.close()
+            db.close()
+            return tasks
+        }
+
+        var proceed = true
+        while(proceed) {
+            val id = result.getString(result.getColumnIndex(KEY_ID).toInt()).toInt()
+            val complexity = result.getString(result.getColumnIndex(KEY_COMPLEXITY).toInt()).toInt()
+            val completion = result.getString(result.getColumnIndex(KEY_COMPLETION).toInt()).toInt()
+            val date = result.getString(result.getColumnIndex(KEY_DATE).toInt())
+            val details = result.getString(result.getColumnIndex(KEY_DETAILS).toInt())
+            var task = Task(id, complexity, details, completion, date)
+            tasks.add(task)
+
+            proceed = result.moveToNext()
+        }
+
+        result.close()
+        db.close()
+        return tasks
+    }
+
+
+    fun clearDB(){
+        val db = this.writableDatabase
+        db.delete(TABLE_NAME, null, null)
+        db.close()
     }
 
 }

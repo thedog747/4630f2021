@@ -61,7 +61,8 @@
             android:minHeight="48dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Description" />
+            android:hint="Description"
+            android:text="" />
 
         <CalendarView
             android:id="@+id/CalendarView"
@@ -72,6 +73,6 @@
             android:id="@+id/SubmitTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Submit" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
