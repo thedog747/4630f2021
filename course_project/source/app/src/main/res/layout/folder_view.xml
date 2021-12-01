@@ -80,12 +80,6 @@
                     android:layout_weight="1"
                     android:text="Concepts" />
 
-                <Button
-                    android:id="@+id/CompletionButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Completion" />
             </LinearLayout>
 
         </RelativeLayout>

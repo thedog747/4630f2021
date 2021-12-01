@@ -9,11 +9,18 @@ import java.text.SimpleDateFormat
 import java.util.*
 import android.content.Intent
 import android.provider.ContactsContract
+import android.util.Log
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 
 class MainActivity : AppCompatActivity() {
+
+    private var layoutManager: RecyclerView.LayoutManager? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val task_context: Context = this
         setContentView(R.layout.activity_main)
 
         AddTaskButton.setOnClickListener{
@@ -38,29 +45,12 @@ class MainActivity : AppCompatActivity() {
 
     fun displayTasks(){
         var tasks = DataBaseHandler(this).getTasks()
-        tasksView.text = String()
-        for (i in tasks){
-            var tempComplex = String()
-            if(i.complexity == 0)
-                tempComplex = "Easy"
-            if(i.complexity == 1)
-                tempComplex = "Medium"
-            if(i.complexity == 2)
-                tempComplex = "Hard"
+        var lm = LinearLayoutManager(this)
+        Content.layoutManager = lm
+        var adp: RecyclerAdapterTask = RecyclerAdapterTask(this, DataBaseHandler(this))
+        Content.adapter = adp
 
-            var tempComplete = String()
-            if(i.completion == 0)
-                tempComplete = "Incomplete"
-            if(i.completion == 1)
-                tempComplete = "Complete"
-
-            tasksView.append("(" + i.details + ")\n"
-                    + i.date + "\n"
-                    + tempComplex + " | "
-                    + tempComplete + " | "
-                    + "ID: " + i.id.toString()
-                    + "\n\n")
-        }
+        return
     }
 }
 

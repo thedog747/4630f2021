@@ -43,7 +43,6 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DB_NAME,
             put(KEY_DATE, task.date)
             put(KEY_DETAILS, task.details)
         }
-
         val result = db.insert(TABLE_NAME, null, cv)
 
         db.close()
@@ -89,6 +88,25 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DB_NAME,
     fun clearDB(){
         val db = this.writableDatabase
         db.delete(TABLE_NAME, null, null)
+        db.close()
+    }
+
+    fun deleteElement(id : String){
+        val db = this.writableDatabase
+        db.delete(TABLE_NAME, "$KEY_ID=?", arrayOf(id))
+        db.close()
+    }
+
+    fun updateCompletion(id : String, initial_completion : Int?){
+        var new_completion : Int = 0
+        if (initial_completion == 1)
+            new_completion = 0
+        else
+            new_completion = 1
+        val db = this.writableDatabase
+        var cv = ContentValues()
+        cv.put(KEY_COMPLETION, new_completion);
+        db.update(TABLE_NAME, cv, KEY_ID + "=?", arrayOf(id))
         db.close()
     }
 

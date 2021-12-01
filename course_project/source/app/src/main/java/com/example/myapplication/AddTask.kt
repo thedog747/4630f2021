@@ -39,21 +39,21 @@ class AddTask : AppCompatActivity() {
         EasyButton.setOnClickListener(){
             difficulty = 0
             EasyButton.setBackgroundColor(Color.parseColor("#5F00ED"))
-            MediumButton.setBackgroundColor(Color.parseColor("#000000"))
-            HardButton.setBackgroundColor(Color.parseColor("#000000"))
+            MediumButton.setBackgroundColor(Color.parseColor("#808080"))
+            HardButton.setBackgroundColor(Color.parseColor("#808080"))
         }
 
         MediumButton.setOnClickListener(){
             difficulty = 1
-            EasyButton.setBackgroundColor(Color.parseColor("#000000"))
+            EasyButton.setBackgroundColor(Color.parseColor("#808080"))
             MediumButton.setBackgroundColor(Color.parseColor("#5F00ED"))
-            HardButton.setBackgroundColor(Color.parseColor("#000000"))
+            HardButton.setBackgroundColor(Color.parseColor("#808080"))
         }
 
         HardButton.setOnClickListener(){
             difficulty = 2
-            EasyButton.setBackgroundColor(Color.parseColor("#000000"))
-            MediumButton.setBackgroundColor(Color.parseColor("#000000"))
+            EasyButton.setBackgroundColor(Color.parseColor("#808080"))
+            MediumButton.setBackgroundColor(Color.parseColor("#808080"))
             HardButton.setBackgroundColor(Color.parseColor("#5F00ED"))
         }
 
