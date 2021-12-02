@@ -3,12 +3,9 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.add_task.*
-import java.sql.DatabaseMetaData
 import java.text.SimpleDateFormat
 import java.util.*
-import android.content.Intent
 import android.graphics.Color
-import android.widget.CalendarView
 
 import android.widget.CalendarView.OnDateChangeListener
 
@@ -28,9 +25,9 @@ class AddTask : AppCompatActivity() {
             selectedDate = (dayOfMonth.toString() + "/" + month.toString() + "/" + year.toString())
         })
 
-        SubmitTask.setOnClickListener(){
+        SubmitLink.setOnClickListener(){
             val theDate: String = selectedDate
-            var task = Task((System.currentTimeMillis()).toInt(), difficulty, Description.text.toString(), 0, theDate)
+            var task = Task((System.currentTimeMillis()).toInt(), difficulty, Link.text.toString(), 0, theDate)
             var db = DataBaseHandler(this)
             db.addTask(task)
         }

@@ -56,7 +56,7 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DB_NAME,
 
     fun getTasks() : MutableList<Task>{
         val db = this.readableDatabase
-        val request = "Select * from " + TABLE_NAME
+        val request = "Select * from $TABLE_NAME"
         val result = db.rawQuery(request, null)
         var tasks : MutableList<Task> = ArrayList()
 

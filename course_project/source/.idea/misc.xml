@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Jack/Documents/GitHub/4630f2021/course_project/source/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Jack/Documents/GitHub/4630f2021/course_project/source/app/src/main/res/layout/add_link.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Jack/Documents/GitHub/4630f2021/course_project/source/app/src/main/res/layout/add_task.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Jack/Documents/GitHub/4630f2021/course_project/source/app/src/main/res/layout/folder_view.xml" value="0.22" />
+        <entry key="..\:/Users/Jack/Documents/GitHub/4630f2021/course_project/source/app/src/main/res/layout/item_row_link.xml" value="0.67" />
         <entry key="..\:/Users/Jack/Documents/GitHub/4630f2021/course_project/source/app/src/main/res/layout/item_row_task.xml" value="0.403125" />
       </map>
     </option>

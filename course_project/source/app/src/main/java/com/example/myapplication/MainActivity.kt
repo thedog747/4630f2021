@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val task_context: Context = this
         setContentView(R.layout.activity_main)
 
         AddTaskButton.setOnClickListener{

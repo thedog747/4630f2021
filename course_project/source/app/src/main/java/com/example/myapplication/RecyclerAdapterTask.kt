@@ -1,7 +1,6 @@
 package com.example.myapplication
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView;
 import kotlinx.android.synthetic.main.item_row_task.view.*
 import kotlin.text.toInt
-import java.security.AccessController.getContext
-import kotlin.collections.ArrayList
 
 class RecyclerAdapterTask(parent_context : Context, DB : DataBaseHandler) : RecyclerView.Adapter<RecyclerAdapterTask.ViewHolder>() {
 
@@ -57,13 +54,12 @@ class RecyclerAdapterTask(parent_context : Context, DB : DataBaseHandler) : Recy
         var t_date : TextView = itemView.findViewById(R.id.item_date)
         var t_difficulty : TextView  = itemView.findViewById(R.id.item_difficulty)
         var t_completion : TextView  = itemView.findViewById(R.id.item_completion)
-        var t_description : TextView  = itemView.findViewById(R.id.item_description)
+        var t_description : TextView  = itemView.findViewById(R.id.item_hyperlink)
         var t_id : TextView  = itemView.findViewById(R.id.item_id)
 
         init {
-            itemView.button_complete.setOnClickListener {
+            itemView.button_go.setOnClickListener {
                 var message = (t_id.text.toString()).trim('I','D',':',' ')
-                Log.d("zased","$message")
                 var temp_task : Task? = tasks.find{it.id == message.toInt()}
                 DB.updateCompletion(message, temp_task?.completion)
                 if (temp_task?.completion == 1)
@@ -75,7 +71,6 @@ class RecyclerAdapterTask(parent_context : Context, DB : DataBaseHandler) : Recy
             }
             itemView.button_delete.setOnClickListener {
                 var message = (t_id.text.toString()).trim('I','D',':',' ')
-                Log.d("zased","$message")
                 var temp_task : Task? = tasks.find{it.id == message.toInt()}
                 tasks.remove(temp_task)
                 DB.deleteElement(message)
