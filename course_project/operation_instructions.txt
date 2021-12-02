@@ -1,0 +1,20 @@
+Operation Instructions:
+1.	On opening the application you will be met with a central view with two components, Calendar and Concepts.
+
+2.	Starting with Calendar View, you can press the Add Task button to open the Add Task menu.
+3.	From here you may add tasks to the DB. You can select the task's difficulty, describe it, and choose a date.
+4.	Press "Submit" when you are ready to add your task. A toast should appear with the text "Success!" on success.
+5.	Pressing android's back button to return, there is now a task. This is a RecyclerView that fills from the DB.
+6.	Pressing "Complete" will toggle the task's completion status. Pressing "Delete" will remove it from the list.
+7.	If you want to wipe out your current DB, press "Clear All" to remove all entries.
+
+8.	Onto the Concepts View, which you can reach from the bottom button, press Add Link to add a link.
+9.	From here you may add links to the other DB. Select a Title, paste the Link, then submit to see "Success!".
+10.	There is now a link in a RecyclerView similar to the previous one. Links can be deleted the same way Tasks can.
+11.	The "Copy" button will take whatever is stored in the Link field and copy it to your phone's clipboard.
+12. The "Go" button will bring you to whatever valid web link is in the Link field.
+13. Try making a task with "YouTube" as the title "https://www.youtube.com/" as the link.
+14. Pressing "Go" on it from the Concepts View will open youtube in your browser.
+15. If you have the YouTube app, it will redirect to the YouTube app for you, same with Twitter, Facebook, etc.
+
+16. Now you know how to access all of Inception's features.

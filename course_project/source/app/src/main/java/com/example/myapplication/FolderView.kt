@@ -31,6 +31,7 @@ class FolderView : AppCompatActivity() {
         CalendarButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish();
         }
 
         AddFileButton.setOnClickListener{

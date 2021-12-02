@@ -1,0 +1,9 @@
+Build Instructions:
+1. Clone the GitHub source code.
+2. Open Android Studio on your computer and select File > Open.
+3. Navigate to the course_project folder and open the "source" folder as a project.
+4. Press Ctrl + F9 and wait for the project to build. You can now run it in the emulator.
+5. To install on your phone, go to Build > Build Bundle(s) / APK(s) > Build APK(s)
+6. Under course_project\source\app\build\outputs\apk\debug you should find "app-debug.apk"
+7. Download app-debug.apk onto your phone and open it. Acknowledge all warnings and install.
+8. Open the application and try it out for real this time.

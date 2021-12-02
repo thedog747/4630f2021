@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         ConceptsButton.setOnClickListener{
             val intent = Intent(this, FolderView::class.java)
             startActivity(intent)
+            finish();
         }
         extraStuff.setOnClickListener{
             DataBaseHandler(this).clearDB()
